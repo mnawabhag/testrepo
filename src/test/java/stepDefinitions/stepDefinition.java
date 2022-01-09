@@ -34,6 +34,11 @@ public class stepDefinition extends Utils {
 
 	@Given("Add place payload with {string} {string} {string}")
 	public void add_place_payload_with(String string, String string2, String string3) throws IOException {
+
+		System.out.println("1st sout added");
+
+
+
 		
 	res=given().log().all().spec(requestSpecification())
 	.body(data.addPlacePayLoad(string, string2, string3));
